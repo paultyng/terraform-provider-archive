@@ -150,11 +150,13 @@ func (a *zipArchiver) open() error {
 
 func (a *zipArchiver) close() {
 	if a.writer != nil {
-		a.writer.Close()
+		// ignore errors
+		_ = a.writer.Close()
 		a.writer = nil
 	}
 	if a.filewriter != nil {
-		a.filewriter.Close()
+		// ignore errors
+		_ = a.filewriter.Close()
 		a.filewriter = nil
 	}
 }
