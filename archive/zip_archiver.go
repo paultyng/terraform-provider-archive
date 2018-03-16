@@ -47,7 +47,7 @@ func (a *zipArchiver) ArchiveFile(infilename string) error {
 		return err
 	}
 
-	if err := a.open(); err != nil {
+	if err = a.open(); err != nil {
 		return err
 	}
 	defer a.close()
