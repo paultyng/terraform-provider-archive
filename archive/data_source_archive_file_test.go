@@ -102,7 +102,7 @@ data "archive_file" "foo" {
 var testAccArchiveFileFileConfig = `
 data "archive_file" "foo" {
   type        = "zip"
-  source_file = "test-fixtures/test-file.txt"
+  source_file = "testdata/test-file.txt"
   output_path = "zip_file_acc_test.zip"
 }
 `
@@ -110,7 +110,7 @@ data "archive_file" "foo" {
 var testAccArchiveFileDirConfig = `
 data "archive_file" "foo" {
   type        = "zip"
-  source_dir  = "test-fixtures/test-dir"
+  source_dir  = "testdata/test-dir"
   output_path = "zip_file_acc_test.zip"
 }
 `

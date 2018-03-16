@@ -28,5 +28,5 @@ archive/*.zip
 website/vendor
 
 # Test exclusions
-!command/test-fixtures/**/*.tfstate
-!command/test-fixtures/**/.terraform/
+!command/testdata/**/*.tfstate
+!command/testdata/**/.terraform/
